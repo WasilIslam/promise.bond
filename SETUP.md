@@ -19,7 +19,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
 
 # JWT Authentication
-JWT_SECRET=your-super-secret-jwt-key-here
+NEXTAUTH_SECRET=your-super-secret-jwt-key-here
 
 # Google OAuth (Optional)
 GOOGLE_CLIENT_ID=your_google_client_id
@@ -67,7 +67,7 @@ npm run dev
 ### Environment Variables You Must Set:
 
 - Supabase URL and keys
-- A secure JWT_SECRET (generate with: `openssl rand -base64 32`)
+- A secure NEXTAUTH_SECRET (generate with: `openssl rand -base64 32`)
 - SMTP email credentials
 
 ## Features Included ✨

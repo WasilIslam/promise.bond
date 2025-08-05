@@ -25,7 +25,7 @@ export async function middleware(request: NextRequest) {
   // Verify token if present
   if (token) {
     try {
-      const secret = new TextEncoder().encode(process.env.JWT_SECRET!);
+      const secret = new TextEncoder().encode(process.env.NEXTAUTH_SECRET!);
       await jwtVerify(token, secret);
 
       // If logged in and trying to access public routes, redirect to dashboard
